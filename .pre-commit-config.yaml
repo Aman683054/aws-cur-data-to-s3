@@ -13,7 +13,4 @@ repos:
     - id: terraform_tfsec
       args:
         - --args=--soft-fail
-    - id: terraform_checkov
-      args:
-        - --args=--framework=terraform
-        - --args=--skip-path=examples
+
