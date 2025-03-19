@@ -9,5 +9,5 @@ variable "lambda_trigger_expression" {
   default = "cron(0 0 * * ? *)" #for daily
   #   default = "cron(0 0 * * SUN *)" #for weekly
   #   default = "cron(0 0 1 * ? *)" #for monthly
-  description = "value"
+  description = "based on CUR_RANGE, select the schedule expression which will trigger the lambda"
 }

@@ -45,7 +45,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_CUR_RANGE"></a> [CUR\_RANGE](#input\_CUR\_RANGE) | Accepted value is daily/weekly/monthly. This value is used as cost and usage data for last 1 day, 7 days or a month | `string` | `"daily"` | no |
-| <a name="input_lambda_trigger_expression"></a> [lambda\_trigger\_expression](#input\_lambda\_trigger\_expression) | value | `string` | `"cron(0 0 * * ? *)"` | no |
+| <a name="input_lambda_trigger_expression"></a> [lambda\_trigger\_expression](#input\_lambda\_trigger\_expression) | based on CUR\_RANGE, select the schedule expression which will trigger the lambda | `string` | `"cron(0 0 * * ? *)"` | no |
 
 ## Outputs
 
