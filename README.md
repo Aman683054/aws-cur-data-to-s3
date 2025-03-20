@@ -1,5 +1,24 @@
 # aws-cur-data-to-s3
 
+```
+├── README.md
+├── documentation
+│   └── aws-cur-data-to-s3.png
+├── scripts
+│   ├── aws-cur-data-to-s3.py
+│   └── aws-cur-data-to-s3.zip
+└── terraform
+    ├── README.md
+    ├── budget.tf
+    ├── cloudwatch.tf
+    ├── data.tf
+    ├── iam.tf
+    ├── lambda.tf
+    ├── main.tf
+    ├── s3.tf
+    └── variables.tf
+```
+
 ### Architecture
 ![alt text](./documentation/aws-cur-data-to-s3.png)
 
