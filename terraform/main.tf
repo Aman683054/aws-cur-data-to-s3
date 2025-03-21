@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-1"
+  region = var.REGION_NAME
   #profile = "default"
 
   default_tags {
@@ -23,6 +23,6 @@ terraform {
   #   backend "s3" {
   #     bucket = "aman-tf-bucket"
   #     key    = "cur/cur.tfstate"
-  #     region = "eu-west-1"
+  #     region = var.REGION_NAME
   #   }
 }

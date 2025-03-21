@@ -13,6 +13,7 @@ variable "lambda_trigger_expression" {
 }
 
 variable "REGION_NAME" {
-  type    = string
-  default = "eu-west-1"
+  type        = string
+  default     = "eu-west-1"
+  description = "region"
 }
