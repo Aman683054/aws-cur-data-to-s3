@@ -6,9 +6,9 @@ variable "CUR_RANGE" {
 
 variable "lambda_trigger_expression" {
   type    = string
-  default = "cron(0 13 * * ? *)" #for daily
-  #   default = "cron(0 13 ? * MON *)" #for weekly
-  #   default = "cron(0 13 1 * ? *)" #for monthly
+  default = "cron(0 12 * * ? *)" #for daily
+  #   default = "cron(0 12 ? * TUE *)" #for weekly, so that it runs once a week 
+  #   default = "cron(0 12 2 * ? *)" #for monthly, so that it runs once a month 
   description = "based on CUR_RANGE, select the schedule expression in UTC which will trigger the lambda code"
 }
 

@@ -27,7 +27,7 @@ logger.info(f"Using CUR Bucket: {CUR_S3_BUCKET}")
 
 # gets the data from cost and usage api
 def get_cur_data(time_range):
-    end_date = datetime.date.today() 
+    end_date = datetime.date.today() - datetime.timedelta(days=1)
     if time_range == "daily":
         start_date = end_date - datetime.timedelta(days=1)
     elif time_range == "weekly":
