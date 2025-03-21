@@ -13,7 +13,7 @@
 | Name | Version |
 |------|---------|
 | <a name="provider_archive"></a> [archive](#provider\_archive) | 2.7.0 |
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.91.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.92.0 |
 
 ## Modules
 
@@ -45,7 +45,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_CUR_RANGE"></a> [CUR\_RANGE](#input\_CUR\_RANGE) | Accepted value is daily/weekly/monthly. This value is used as cost and usage data for last 1 day, 7 days or a month | `string` | `"daily"` | no |
-| <a name="input_lambda_trigger_expression"></a> [lambda\_trigger\_expression](#input\_lambda\_trigger\_expression) | based on CUR\_RANGE, select the schedule expression which will trigger the lambda | `string` | `"cron(0 0 * * ? *)"` | no |
+| <a name="input_REGION_NAME"></a> [REGION\_NAME](#input\_REGION\_NAME) | n/a | `string` | `"eu-west-1"` | no |
+| <a name="input_lambda_trigger_expression"></a> [lambda\_trigger\_expression](#input\_lambda\_trigger\_expression) | based on CUR\_RANGE, select the schedule expression in UTC which will trigger the lambda code | `string` | `"cron(0 13 * * ? *)"` | no |
 
 ## Outputs
 

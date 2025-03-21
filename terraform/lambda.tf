@@ -7,8 +7,9 @@ resource "aws_lambda_function" "cur_lambda" {
   source_code_hash = filebase64sha256(data.archive_file.lambda_zip.output_path)
   environment {
     variables = {
-      S3_BUCKET = aws_s3_bucket.cur_bucket.bucket
-      CUR_RANGE = var.CUR_RANGE
+      S3_BUCKET   = aws_s3_bucket.cur_bucket.bucket
+      CUR_RANGE   = var.CUR_RANGE
+      REGION_NAME = var.REGION_NAME
     }
   }
 

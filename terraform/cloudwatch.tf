@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_event_rule" "cur_lambda_trigger" {
   name                = "aws-cur-data-to-s3"
-  schedule_expression = "cron(0/5 * * * ? *)" #for daily
+  schedule_expression = var.lambda_trigger_expression
 }
 resource "aws_cloudwatch_event_target" "cur_invoke_lambda" {
   rule      = aws_cloudwatch_event_rule.cur_lambda_trigger.name

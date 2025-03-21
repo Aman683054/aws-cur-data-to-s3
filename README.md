@@ -25,7 +25,7 @@
 
 ### Manual Deployment Steps
 1. login to the aws account from AWS CLI
-2. export the AWS_PROFILE on the cli
+2. export the AWS_PROFILE on the cli. (Make sure your AWS PROFILE is set, either by running below command or by updating `profile = <PROFILE_NAME>` in main.tf )
 ```
 export AWS_PROFILE=default
 ```

@@ -9,8 +9,10 @@ from dateutil.relativedelta import relativedelta
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+REGION_NAME = os.getenv("REGION_NAME", "us-east-1")
+
 # setting up aws clients
-cost_explorer_client = boto3.client("ce", region_name= "eu-west-1")
+cost_explorer_client = boto3.client("ce", region_name= REGION_NAME)
 s3_client = boto3.client("s3")
 sts_client = boto3.client("sts")
 
@@ -25,7 +27,7 @@ logger.info(f"Using CUR Bucket: {CUR_S3_BUCKET}")
 
 # gets the data from cost and usage api
 def get_cur_data(time_range):
-    end_date = datetime.date.today()
+    end_date = datetime.date.today() 
     if time_range == "daily":
         start_date = end_date - datetime.timedelta(days=1)
     elif time_range == "weekly":
