@@ -22,6 +22,7 @@
 ### Architecture
 ![alt text](./documentation/aws-cur-data-to-s3.png)
 
+Detailed architecture overview is in ./documentation/Architecture-overview-and-cost-optimization.docx
 
 ### Manual Deployment Steps
 
