@@ -17,3 +17,9 @@ variable "REGION_NAME" {
   default     = "eu-west-1"
   description = "region"
 }
+
+variable "alerts_recipients" {
+  type        = list(any)
+  default     = ["aman@email.com"]
+  description = "list of email ids to get notified of budget alerts"
+}

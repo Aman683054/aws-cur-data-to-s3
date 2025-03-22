@@ -46,6 +46,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_CUR_RANGE"></a> [CUR\_RANGE](#input\_CUR\_RANGE) | Accepted value is daily/weekly/monthly. This value is used as cost and usage data for last 1 day, 7 days or a month | `string` | `"daily"` | no |
 | <a name="input_REGION_NAME"></a> [REGION\_NAME](#input\_REGION\_NAME) | region | `string` | `"eu-west-1"` | no |
+| <a name="input_alerts_recipients"></a> [alerts\_recipients](#input\_alerts\_recipients) | list of email ids to get notified of budget alerts | `list(any)` | <pre>[<br>  "aman@email.com"<br>]</pre> | no |
 | <a name="input_lambda_trigger_expression"></a> [lambda\_trigger\_expression](#input\_lambda\_trigger\_expression) | based on CUR\_RANGE, select the schedule expression in UTC which will trigger the lambda code | `string` | `"cron(0 12 * * ? *)"` | no |
 
 ## Outputs
