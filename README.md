@@ -43,3 +43,10 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+### to bring down the stack
+1. empty the objects from s3 bucket manually
+2. run terraform destroy
+```
+terraform destroy
+```
